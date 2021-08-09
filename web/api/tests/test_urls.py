@@ -23,8 +23,3 @@ class testUserUrls(SimpleTestCase):
     def test_me_url_is_resolved(self):
         url = reverse('my_user')
         self.assertEquals(resolve(url).func.view_class, Me)
-
-
-# path('signup/', views.Signup.as_view(), name='user_signup'),
-# path('signin/', views.SigninView.as_view(), name='token_obtain_pair'),
-# path('login/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
